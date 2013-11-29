@@ -2,21 +2,30 @@
 <head>
 	<title>Github Test </title>
 	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script>
+		$<document).ready(function() {
+			$("#hide-me").click(function() {
+				$(".box").hide(5000);
+		    });
+	    });
+		
+		
+	</script>
 	<style>
 		body {
 			font-family: "Helvetica Neue", Helvetica, Arial, Sans-serif;
 			background: cornflowerblue;
 		}
 		.box {
-			background:red;
-			width:250px;
-			height:250px;
+			background: red;
+			width: 250px;
+			height: 250px;
 		}
 </head>
 <body>
 	<h1>Github Test </h1>
 	<ul>
-		<li>Hide</li>
+		<li id="hide-me">Hide</li>
 		<li>Show</li>
 		<li>Toggle</li>
 	</ul>
